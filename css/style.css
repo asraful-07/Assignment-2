@@ -122,6 +122,35 @@ body{
     width: 100%;
     height: auto;
  }
+ /* animison code section */
+.animison{
+   /* position: absolute; */
+   width: 130px;
+   background-color: #fff;
+   border: 2px solid red;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+  
+}
+.orench{
+   width: 40px;
+   height: 40px;
+   background-color: var(--orange);
+   border-radius: 50%;
+}
+.word{
+   color: #000;
+}
+.ss{
+   color: #000;
+}
+.div-x{
+   width: 130px;
+   background-color: #fff;
+   color: #000;
+   border: 2px solid green;
+}
 
  /* card section code */
  .card-section h3{
@@ -202,11 +231,10 @@ body{
  }
  .about-imge img{
    /* width: 100%; */
-   /* width: 366px; */
    max-width: 366px;
-   height: 312px;
+   /* height: 312px; */
    border-radius: 18px;
-   object-fit: cover;
+   /* object-fit: cover; */
  }
 
  /*  Gallery section code */
@@ -241,9 +269,10 @@ body{
 }
 .row-1{
    display: grid;
-   grid-template-columns: repeat(3,1fr);
+   grid-template-columns: repeat(3, 1fr);
+   align-items: center;
    gap: 20px;
-   margin: 20px;
+   /* margin: 20px; */
 }
 .country-gallery{
    position: relative;
@@ -272,11 +301,24 @@ footer {
    background-color: rgba(255, 255, 255, 0.1);
 }
 .footer-container{
-   margin: 0 auto;
+   /* margin: 0 auto; */
    display: flex;
    justify-content: space-between;
    align-items: center;
    gap: 3rem;
+}
+
+.footer-content {
+   /* width: 50%; */
+   /* flex-grow: 1; */
+}
+
+.footer-links {
+   /* width: 50%; */
+   /* display: flex; */
+   /* justify-content: space-between; */
+   /* gap: 3rem; */
+   /* flex-grow: 1; */
 }
 .footer-title{
      font-size: 14px;
@@ -300,10 +342,10 @@ footer {
    line-height: 120%;
    margin: 20px 0px;
 }
-.hr{
+ /* .hr{
    border: 2px solid rgba(255, 255, 255, 0.1);
-   margin: 36px 0;
-}
+   margin: 36px 0; 
+}  */
 .footer-end{
    font-size: 20px;
    font-weight: 400;
@@ -313,7 +355,8 @@ footer {
    padding-bottom: 35px;
 }
 
-/* Responsiv mobile first */
+/* Ressponsiv mobile first */
+
 @media screen and (max-width: 576px){
    /* here common style */
    .section-container {
@@ -328,6 +371,15 @@ footer {
    .footer-container
    {
       flex-direction: column;
+   }
+   .about-imge{
+      padding: 10px;
+   }
+   .about-imge img{
+      width: 100%;
+   }
+   .btn{
+      margin-bottom: 10px;
    }
    .row-1{
       grid-template-columns: repeat(1, 1fr);
