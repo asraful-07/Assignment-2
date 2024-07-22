@@ -260,19 +260,18 @@ body{
    background: rgba(0, 0, 0, 0.2),url(image);
 }
 .gallery{
-   /* width: 1060px; */
-   margin: 0 auto;
    border-radius: 18px;
    background: rgba(255, 255, 255, 0.1);
    margin-top: 44px;
-   border: 2px solid purple;
+   border: 2px solid black;
 }
 .row-1{
    display: grid;
    grid-template-columns: repeat(3, 1fr);
+   justify-items: center;
    align-items: center;
    gap: 20px;
-   /* margin: 20px; */
+   margin: 20px 0;
 }
 .country-gallery{
    position: relative;
