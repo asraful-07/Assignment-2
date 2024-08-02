@@ -93,7 +93,7 @@ body{
     text-align: left;
  }
  .span{
-    font-family: miama;
+   font-family: "Dancing Script", cursive;
     font-size: 78px;
     font-weight: 400;
  }
@@ -130,18 +130,19 @@ body{
  }
  /* animison code section */
 .animison{
+   width: 206px;
+   height: 96px;
    position: absolute;
    bottom: 30px;
    right: 200px;
    transform: translate(-50%,-50%);
-   width: 130px;
    box-sizing: border-box;
    border: 1px solid rgba(255, 255, 255, 0.1);
    border-radius: 12px;
-   
    backdrop-filter: blur(20px);
    background: rgba(48, 48, 48, 0.54);
    display: flex;
+   justify-content: center;
    align-items: center;
    gap: 20px;
   
@@ -259,6 +260,39 @@ body{
    /* object-fit: cover; */
  }
 
+ /* our plans section code */
+ .plans{
+   color: rgb(255, 255, 255);
+   font-size: 48px;
+   font-weight: 900;
+   margin-bottom: 40px;
+   text-align: center;
+ }
+.plans-container{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 40px;
+}
+.box-content{
+   box-shadow: 0px 8px 12px rgba(255, 255, 255, 0.5);
+   padding: 48px;
+}
+.plan-2{
+   font-size: 24px;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+.tk{
+   color: aqua;
+   font-size: 24px;
+   font-weight: 500;
+}
+.items{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
  /* BMI Calculator chat section code */
  .bmi-title{
    font-size: 48px;
@@ -301,22 +335,13 @@ body{
    text-align: center;
 }
 .bmi{
-   color: rgb(255, 255, 255);
    font-size: 28px;
    font-weight: 900;
-   line-height: 120%;
-   letter-spacing: 0%;
-   text-align: center;
-   margin: 14px 0;
 }
 .bmi-text{
-   color: rgba(255, 255, 255, 0.5);
+   margin: 34px 0;
    font-size: 14px;
    font-weight: 400;
-   line-height: 24px;
-   letter-spacing: 0.3px;
-   text-align: center;
-   margin-bottom: 34px;
 }
 .type{
    width: 277px;
@@ -473,6 +498,10 @@ footer {
    line-height: 120%;
    margin: 20px 0px;
 }
+.hr{
+   margin-top: 60px;
+   border: 2px solid rgba(255, 255, 255, 0.1);
+}
 .footer-end{
    font-size: 20px;
    font-weight: 400;
@@ -510,7 +539,9 @@ footer {
    .btn{
       margin-bottom: 10px;
    }
-   .row-1{
+   .row-1,
+   .plans-container
+   {
       grid-template-columns: repeat(1, 1fr);
    }
    .type,
