@@ -31,13 +31,13 @@ body{
    padding-bottom: 32px;
    max-width: 1440px;
    margin: 0 auto;
-   /* position: relative; */
 }
 #header-with-banner{
    padding-left: 50px;
    padding-right: 50px;
+   padding-bottom: 50px;
+   overflow: hidden;
    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
-   position: relative;
 }
 .nabar{
     display: flex;
@@ -129,13 +129,16 @@ body{
     width: 100%;
     height: auto;
  }
- /* animison code section */
+ .banner-imge{
+   position: relative;
+ }
+ /* position code section */
 .animison{
    width: 206px;
    height: 96px;
    position: absolute;
-   bottom: 100px;
-   right: 280px;
+   bottom: 70px;
+   right: 260px;
    box-sizing: border-box;
    border: 1px solid rgba(255, 255, 255, 0.1);
    border-radius: 12px;
@@ -174,8 +177,8 @@ body{
 }
 .div-x{
    position: absolute;
-   right: 140px;
-   top: 260px;
+   right: -40px;
+   top: 130px;
    width: 193px;
    height: 98px;
    box-sizing: border-box;
@@ -278,11 +281,9 @@ body{
    padding: 30px 32px 29px 0;
  }
  .about-imge img{
-   /* width: 100%; */
-   max-width: 366px;
-   /* height: 312px; */
+   width: 100%;
+   /* max-width: 366px; */
    border-radius: 18px;
-   /* object-fit: cover; */
  }
 
  /* our plans section code */
@@ -300,6 +301,7 @@ body{
 }
 .box-content{
    box-shadow: 0px 8px 12px rgba(255, 255, 255, 0.5);
+   border-radius: 8px;
    padding: 48px;
 }
 .plan-2{
@@ -337,6 +339,7 @@ body{
 }
 .bg-container{
    background-color: rgba(255, 255, 255, 0.1);
+   margin-bottom: 50px;
 }
 .bmi-container{
    display: flex;
@@ -414,7 +417,6 @@ body{
    background: rgba(255, 255, 255, 0.1);
    color: rgba(255, 255, 255, 0.6);
    margin-left: 12px;
-   text-align: left;
 }
 .select-2{
    width: 577px;
@@ -422,7 +424,6 @@ body{
    border-radius: 8px;
    padding: 13PX;
    font-size: 16px;
-   text-align: left;
    font-weight: 400;
    margin-bottom: 34px;
    border: none;
@@ -489,6 +490,7 @@ body{
 /* footer section code */
 footer {
    background-color: rgba(255, 255, 255, 0.1);
+   margin-top: 60px;
 }
 .footer-container{
    display: flex;
@@ -534,20 +536,33 @@ footer {
    padding-bottom: 35px;
 }
 
-/* Ressponsiv mobile first */
+/* Responsive mobile first */
 
 @media screen and (max-width: 576px){
    /* here common style */
    .section-container {
       width: 100%;
-      padding: 66px 20px;
+      padding: 30px 20px;
    }
-   /* .banner-section{
-      padding: 0 20px;
+   .animison{
+      width: 146px;
+      top: 230px;
+      right: 180px;
    }
-   #header-with-banner{
-      padding: 0px 20px;
-   } */
+   .word{
+      font-size: 18px;
+   }
+   .ss,.rrr{
+      font-size: 12px;
+   }
+   .div-x{
+      width: 145px;
+      top: 60px;
+      right: -20px;
+   }
+   .h5{
+      font-size: 32px;
+   }
    .banner-text,
    .card-section h3,
    .about-title,
@@ -571,6 +586,13 @@ footer {
    {
       flex-direction: column;
    }
+   .about-container,
+   .bmi-container,
+   .footer-container,
+   .banner-container
+   {
+      gap: 30px;
+   }
    .about-imge{
       padding: 10px;
    }
@@ -585,6 +607,9 @@ footer {
    {
       grid-template-columns: repeat(1, 1fr);
    }
+   /* .plans-container{
+      width: 100%;
+   } */
    .gallery .country-gallery img{
       width: 313px;
    }
@@ -593,7 +618,7 @@ footer {
    .type-3,
    .select,
    .select-2{
-      width: 100%;
+      width: 80%;
       margin: 10px;
    }
    .bmi-chart,
