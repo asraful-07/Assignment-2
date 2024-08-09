@@ -282,7 +282,8 @@ body{
  }
  .about-imge img{
    width: 100%;
-   /* max-width: 366px; */
+   object-fit: none;
+   object-position: 66% 28%;
    border-radius: 18px;
  }
 
@@ -448,9 +449,13 @@ body{
    margin: 14px 0px;
 }
 .gallery .country-gallery img{
+   /* width: 100%; */
+   /* height: 100%; */
+   /* width: 410px; */
    width: 410px;
    height: 272px;
-   border-radius: 18px;
+   border-radius: 18px;   
+    /* object-fit: cover; */
    background: rgba(0, 0, 0, 0.2),url(image);
 }
 .gallery{
@@ -466,7 +471,7 @@ body{
    align-items: center;
    gap: 20px;
    margin: 20px;
-}
+} 
 .country-gallery{
    position: relative;
 }
@@ -537,9 +542,7 @@ footer {
 }
 
 /* Responsive mobile first */
-
 @media screen and (max-width: 576px){
-   /* here common style */
    .section-container {
       width: 100%;
       padding: 30px 20px;
@@ -547,7 +550,7 @@ footer {
    .animison{
       width: 146px;
       top: 230px;
-      right: 180px;
+      right: 160px;
    }
    .word{
       font-size: 18px;
@@ -557,11 +560,11 @@ footer {
    }
    .div-x{
       width: 145px;
-      top: 60px;
+      top: 30px;
       right: -20px;
    }
    .h5{
-      font-size: 32px;
+      font-size: 30px;
    }
    .banner-text,
    .card-section h3,
@@ -607,9 +610,103 @@ footer {
    {
       grid-template-columns: repeat(1, 1fr);
    }
-   /* .plans-container{
+   .plans-container{
       width: 100%;
-   } */
+   }
+   .gallery .country-gallery img{
+      width: 313px;
+   }
+   .type,
+   .type-2,
+   .type-3,
+   .select,
+   .select-2{
+      width: 80%;
+      margin: 10px;
+   }
+   .bmi-chart,
+   .bmi
+   {
+      font-size: 16px;
+      text-align: left;
+   }
+   .footer-container{
+      align-items: flex-start;
+   }
+}
+
+/* Responsive mobile first */
+@media screen and (min-width: 576px) and  (max-width: 992px){
+   .section-container {
+      width: 100%;
+      padding: 30px 20px;
+   }
+   .animison{
+      width: 146px;
+      top: 230px;
+      right: 160px;
+   }
+   .word{
+      font-size: 18px;
+   }
+   .ss,.rrr{
+      font-size: 12px;
+   }
+   .div-x{
+      width: 145px;
+      top: 30px;
+      right: -20px;
+   }
+   .h5{
+      font-size: 30px;
+   }
+   .banner-text,
+   .card-section h3,
+   .about-title,
+   .plans,
+   .bmi-title,
+   .gallery-title
+   {
+      font-size: 32px;
+   }
+   .span{
+      font-size: 32px;
+   }
+   .nabar ul{
+      display: none;
+   }
+   .banner-container,
+   .card-container,
+   .about-container,
+   .footer-container,
+   .bmi-container
+   {
+      flex-direction: column;
+   }
+   .about-container,
+   .bmi-container,
+   .footer-container,
+   .banner-container
+   {
+      gap: 30px;
+   }
+   .about-imge{
+      padding: 10px;
+   }
+   .about-imge img{
+      width: 100%;
+   }
+   .btn{
+      margin-bottom: 10px;
+   }
+   .row-1,
+   .plans-container
+   {
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .plans-container{
+      width: 100%;
+   }
    .gallery .country-gallery img{
       width: 313px;
    }
