@@ -667,6 +667,110 @@ footer {
 }
 
 /* Responsive mobile first */
+@media screen and (min-width: 576px) and (max-width: 992px){
+  .section-container {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .menu {
+    display: block;
+    color: 2px solid rgb(255, 255, 255);
+  }
+  .animison {
+    width: 146px;
+    top: 230px;
+    right: 160px;
+  }
+  .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: block;
+  }
+  .word {
+    font-size: 18px;
+  }
+  .ss,
+  .rrr {
+    font-size: 12px;
+  }
+  .div-x {
+    width: 145px;
+    top: 30px;
+    right: -20px;
+  }
+  .h5 {
+    font-size: 30px;
+  }
+  .banner-text,
+  .card-section h3,
+  .about-title,
+  .plans,
+  .bmi-title,
+  .gallery-title {
+    font-size: 32px;
+  }
+  .span {
+    font-size: 32px;
+  }
+  .nabar ul {
+    display: none;
+  }
+  .banner-container,
+  .card-container,
+  .about-container,
+  .footer-container,
+  .bmi-container {
+    flex-direction: column;
+  }
+  .about-container,
+  .bmi-container,
+  .footer-container,
+  .banner-container {
+    gap: 30px;
+  }
+  .about-imge {
+    padding: 10px;
+  }
+  .about-imge img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+  }
+  .btn {
+    margin-bottom: 10px;
+  }
+  .row-1,
+  .plans-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .plans-container {
+    width: 100%;
+  }
+  .gallery .country-gallery img {
+    width: 313px;
+  }
+  .type,
+  .type-2,
+  .type-3,
+  .select,
+  .select-2 {
+    width: 80%;
+    margin: 10px;
+  }
+  .bmi-chart,
+  .bmi {
+    font-size: 16px;
+    text-align: left;
+  }
+  .footer-container {
+    align-items: flex-start;
+  }
+}
+
+/* Responsive mobile first */
 @media screen and (min-width: 992px) and (max-width: 1300px) {
   .section-container {
     padding: 30px 20px;
