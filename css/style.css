@@ -372,11 +372,10 @@ body {
 tr,
 td,
 th {
-  width: 310px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-collapse: collapse;
-  padding: 10px 20px;
-  text-align: center;
+  padding: 10px 30px;
+  /* text-align: center; */
 }
 .bmi {
   font-size: 28px;
@@ -427,6 +426,10 @@ th {
   background: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.6);
   margin: 12px 0;
+}
+.b{
+  text-align: start;
+  padding: 20px 30px;
 }
 .select {
   border-radius: 8px;
